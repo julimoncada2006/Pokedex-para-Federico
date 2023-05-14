@@ -112,29 +112,6 @@ body {
     display: block;
 }
 
-.hero-image-container::after {
-    content: '';
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 5rem;
-    background-color: hsla(9, 100%, 50%, 0.3);
-    width: 100%;
-    height: 100%;
-    border-radius: 1rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    z-index: 2;
-    opacity: 0;
-    transition: opacity 0.3s ease-out;
-}
-
-.hero-image-container:hover::after {
-    opacity: 1;
-  }
-
-
 a {
     color: inherit;
 }
@@ -148,7 +125,6 @@ h1 {
 h2 {
     font: var(--var-small-heading);
     color: var(--var-lightest);
-    /* padding on .coin-base */
 }
 
 p {
@@ -163,11 +139,12 @@ span {
 .card-container {
     width: 100%;
     max-width: 400px;
-    margin: 2em auto;
+    margin: 1em;
     background-color: var(--var-card-dark);
     border-radius: 15px;
     margin-bottom: 1rem;
     padding: 2rem;
+    float: left;
 }
 
 .small-image {
